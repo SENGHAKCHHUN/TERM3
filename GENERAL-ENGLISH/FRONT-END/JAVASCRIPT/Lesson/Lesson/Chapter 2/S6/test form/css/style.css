@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #20cc81;
+}
+
+.container {
+    background: rgb(39, 209, 225);
+    width: 30%;
+    margin: auto;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    gap: 10px;
+}
+
+input[type="text"], 
+select{
+    padding: 10px;
+}
+
+h1{
+    text-align: center;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    gap:0  10px;
+}
+.sports,
+.class{
+    flex-direction: row;
+}
+
+#btn-submit{
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+p, 
+.username label,
+.sex label{
+    font-weight: bold;
+}
+
