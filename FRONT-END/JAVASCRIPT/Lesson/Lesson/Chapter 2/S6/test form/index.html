@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <form action="#" id="form">
+            <h1 id="header">Form Login</h1>
+            <div class=" input username">
+                <label for="username">Username</label>
+                <input type="text" id="name" placeholder="Type your name...">
+            </div>
+            <div class="input sex">
+                <label for="gender">Gender</label>
+                <select name="gender" id="gender">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+            </div>
+
+            <p>Class</p>
+            <div class=" input class">
+                <div class="w-a">
+                    <input type="radio" name="classroom" id="classroom" value="WEP-A">WEP-A
+                </div>
+                <div class="w-b">
+                    <input type="radio" name="classroom" id="classroom" value="WEP-B">WEP_B
+                </div>
+            </div>
+
+            <p>Sports</p>
+            <div class=" input sports">
+                <div class="f-ball">
+                    <input type="checkbox" name="sport" id="football" value="Football">Football
+                </div>
+                <div class="v-ball">
+                    <input type="checkbox" name="sport" id="volleyball" value="Volleyball">Volleyball
+                </div>
+                <div class="t-ball">
+                    <input type="checkbox" name="sport" id="tennis" value="Tennis"> Tennis
+                </div>
+            </div>
+            <div class="btn">
+                <button type="button" id="btn-submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+<script src="js/main.js"></script>
+</html>
