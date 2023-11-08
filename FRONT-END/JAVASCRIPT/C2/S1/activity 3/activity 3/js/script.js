@@ -10,7 +10,7 @@
 // }
 
 
-document.getElementById("title-paragraph").remove();
+document.getElementById("title-paragraph").style.display = none;
 document.getElementById("space").placeholder = 'Type here to search';
 document.getElementsByClassName("title")[0].textContent = 'My book list';
 document.getElementsByClassName('name')[0].textContent = 'Tum Teav';
