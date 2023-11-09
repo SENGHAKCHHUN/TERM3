@@ -12,9 +12,10 @@ function randomcolor(){
     document.body.style.backgroundColor = color;
     // add text content to h1 = color code
     document.getElementById("color").textContent = color;
+    
 };
 console.log(color)
 document.addEventListener('click', function(){
-    randomcolor()
-    color = '#'
+    color = '#';
+    change = (6, randomcolor())
 })

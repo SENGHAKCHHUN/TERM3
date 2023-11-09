@@ -14,16 +14,14 @@ function randomGradientColor() {
     let randomOne = randomColor();
     let randomTwo = randomColor();
     let randomThree = randomColor();
-    let gradient = 'linear-gradient('+'to top'+','+ randomOne+','+ randomTwo +','+randomThree +')';  
+    let backgroundColor = 'linear-gradient('+'to top'+','+ randomOne+','+ randomTwo +','+randomThree +')';  
     // console.log(gradient);
-    return gradient
-    
+    document.body.style.backgroundImage = backgroundColor;
+    document.getElementById("color").textContent = backgroundColor;   
 }
 
 document.addEventListener('click',function(){
-    backgroundColor = randomGradientColor();
-    document.body.style.backgroundImage = backgroundColor;
-    document.getElementById("color").textContent = backgroundColor;
+    randomGradientColor();
 })
 // set background color to body =  color code
 // add text content to h1 = color code
