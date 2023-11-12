@@ -15,11 +15,13 @@ function clock() {
     if (hours >12){
         hours = hours -12
         hours = padZero(hours)
+    }else if(hours <10){
+        hours = padZero(hours)
     }
     let time = String(hours) + '  :  ' + String(minutes) + '  :  ' + String(seconds)
     document.getElementById("clock").textContent = time;
 
-    let x = document.createElement('p');
+    // let x = document.createElement('p');
     
     let day = now.getDate();
     let month = now.getMonth();

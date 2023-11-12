@@ -15,29 +15,32 @@
 
 
 
-function findAllEqual(arr){
-  for (let i = 0; i < arr.length; i = i +1){
-    if (arr[0] != arr[i]){
-      return false
-    }
-  }
-  return true
-}
-let array = [4,10,4,4];
-console.log(findAllEqual(array));
-
-
-
-
-
-
-
-
-// function string(obj){
-//   return 'studnet ' + obj['name'] + ' is ' + obj['age'] + ' years old'  
+// function findAllEqual(arr){
+//   for (let i = 0; i < arr.length; i = i +1){
+//     if (arr[0] != arr[i]){
+//       return false
+//     }
+//   }
+//   return true
 // }
-// let student = {name : 'ronan', age : 17};
-// console.log("test function4:", string(student));
+// let array = [4,10,4,4];
+// console.log(findAllEqual(array));
+
+
+
+
+
+
+
+
+function string(obj){
+  return 'studnet ' + obj.name + ' is ' + obj['age'] + ' years old'  
+}
+
+let student = {name : 'ronan', age : 17};
+console.log(string(student));
+
+
 
 // function findTrue(s1 , s2){
 //   if (s1.length > s2.length){
