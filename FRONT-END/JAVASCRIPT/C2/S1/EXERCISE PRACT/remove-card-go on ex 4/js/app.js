@@ -83,6 +83,7 @@ function numberOfCard() {
 const btnCreate = document.querySelector('#create');
 const number = document.querySelector('#input');
 const container = document.querySelector('.container');
+const addCard = document
 btnCreate.addEventListener('click', numberOfCard);
 
 

@@ -13,7 +13,6 @@ function createCard() {
   card.appendChild(cardBody)
   
   
-
   // TODO CARD IMAGE 
   // create a img named cardImage
   const cardImage = document.createElement('img')
