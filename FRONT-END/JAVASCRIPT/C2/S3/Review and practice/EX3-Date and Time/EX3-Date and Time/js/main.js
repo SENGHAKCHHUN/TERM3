@@ -7,6 +7,10 @@ function showDate() {
   
   Minutes = zero(Minutes)
   seconds = zero(seconds)
+  if (hours > 12){
+    hours = hours - 12
+    hours = zero(hours)
+  }
   let H = document.getElementById('hour');
   H.textContent = hours
   let M = document.getElementById("minute");
@@ -21,7 +25,7 @@ function showDate() {
   let D = today.getDate();
   let Mo = today.getMonth();
   let Y = today.getFullYear();
-  let sting = D+ months[Mo] + Y;
+  let sting = D+"-"+ months[Mo]+"-" + Y;
   // add text content to hourElement, minElement, secElement 
   
   // add text content to dateElement as format(date month year)
