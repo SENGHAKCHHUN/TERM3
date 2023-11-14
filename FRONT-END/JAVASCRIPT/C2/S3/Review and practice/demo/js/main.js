@@ -1,6 +1,6 @@
 //get last li in ul by using service.parentLeement
 const service = document.querySelector('#services')
-console.log(service.parentElement.parentElement)
+// console.log(service.parentElement.parentElement)
 
 //get first button in group button
 // console.log(service.parentElement.parentElement.nextElementSibling.firstElementChild);
@@ -9,9 +9,9 @@ console.log(service.parentElement.parentElement)
 // console.log(service.parentElement.parentElement.parentElement)
 
 const ul = service.closest('ul')
-// console.log(ul)
+console.log(ul)
 
-console.log(ul.nextElementSibling.firstElementChild)
+// console.log(ul.nextElementSibling.firstElementChild)
 
 // /// get container form html
 // let container = document.querySelector('.container')
