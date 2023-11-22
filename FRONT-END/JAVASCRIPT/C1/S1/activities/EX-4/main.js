@@ -1,5 +1,4 @@
 let temperature = prompt("What is the Temperature ?");
-console.log(temperature)
 let img = document.querySelector("#fan"); // TODO: Get image element with id "fan"
 if (temperature <= 0) {
     // TODO: Change image to cold.png when condition is true
@@ -10,5 +9,4 @@ if (temperature <= 0) {
 } else {
     // TODO: Change image to sunny.png when condition is true
     img.src="sunny.png";
-
 }
