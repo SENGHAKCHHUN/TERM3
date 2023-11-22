@@ -10,6 +10,7 @@ function getValue(elements) {
 function showCase() {
     const cards = document.querySelectorAll('.card'); //list card
     let arrayCheckbox = getValue(checkboxes); // list array checkbox
+    console.log(arrayCheckbox)
     if (arrayCheckbox.length === 0){
         for (let card of cards){
             card.style.display ='block';
@@ -35,6 +36,7 @@ function showCase() {
 // Main
 let content = document.querySelectorAll('.content');
 const checkboxes = document.querySelectorAll('.lang')
+console.log(checkboxes)
 for (let checkbox of checkboxes) {
     checkbox.addEventListener('change', showCase);
 }

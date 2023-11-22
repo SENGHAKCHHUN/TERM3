@@ -25,12 +25,6 @@ function getCheckboxValue(checkboxes) {
 }
 function submitSurvey() {
     let qOne = getRadioValue(questionOne);
-    /// or
-    // for (let one of questionOne){
-    //     if (one.checked){
-    //         qOne = one.value
-    //     }
-    // }
     let qTwo = getRadioValue(questionTwo);    
     let qThree = getCheckboxValue(questionThree);
     let qFour = getCheckboxValue(questionFour);

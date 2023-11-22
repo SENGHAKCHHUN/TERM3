@@ -50,7 +50,6 @@ function createRow(student) {
     tdName.textContent = student.name;
     tdEmail.textContent = student['email'];
     tdPhone.textContent = student.phone;
-
     tr.appendChild(tdId);
     tr.appendChild(tdName);
     tr.appendChild(tdEmail);
@@ -58,15 +57,22 @@ function createRow(student) {
     tr.appendChild(tdAction)
     tbody.appendChild(tr)
 }
-
 function showStudentDetails(student) {
-    console.log(student.children.textContent)
+    console.log(student.firstElementChild.textContent)
     let cardId = document.getElementById('cardId');
     let cardName = document.getElementById('cardName');
     let cardEmail = document.getElementById('cardEmail');
     let cardPhone = document.getElementById('cardPhone');
-    
     let show = document.getElementById('studentCard');
+    cardId.textContent = student.firstElementChild.textContent;
+    let id = student.firstElementChild.textContent;
+    let name = student.firstElementChild.nextElementSibling.textContent
+    let email = student.firstElementChild.nextElementSibling.nextElementSibling.textContent;
+    let phone = student.lastElementChild.previousElementSibling.textContent;
+    cardId.textContent = id;
+    cardName.textContent = name;
+    cardEmail.textContent = email;
+    cardPhone.textContent = phone;
     show.style.display = 'block'
 }
 
@@ -80,6 +86,5 @@ for (let value of deleteList){
     value.addEventListener('click',function(){
         let data = value.parentElement.parentElement;
         showStudentDetails(data)
-            
     })
 }
