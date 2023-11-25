@@ -4,7 +4,7 @@ const clearInput = () => {
    firstName.value = '';
    lastName.value = '';
    province.value = '';
-   genders.value = '';
+   sex.value = '';
    skills.value = '';
    comment.value = '';
 }
