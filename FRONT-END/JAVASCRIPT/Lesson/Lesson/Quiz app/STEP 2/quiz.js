@@ -55,14 +55,14 @@ function show(element) {
 // Render a question
 function renderQuestion() {
   // TODO  1 - Get the question at the current index
-  let question=questions[runningQuestionIndex];
+  let question = questions[runningQuestionIndex];
 
   // TODO  2 - Update the DOM to display the question title and 4 choices
-  dom_question.textContent=question.title;
-  dom_choiceA.textContent=question.choiceA;
-  dom_choiceB.textContent=question.choiceB;
-  dom_choiceC.textContent=question.choiceC;
-  dom_choiceD.textContent=question.choiceD;
+  dom_question.textContent = question.title;
+  dom_choiceA.textContent = question.choiceA;
+  dom_choiceB.textContent = question.choiceB;
+  dom_choiceC.textContent = question.choiceC;
+  dom_choiceD.textContent = question.choiceD;
 }
 
 // Start quiz
@@ -95,7 +95,7 @@ function renderSCore() {
   show(dom_score);
 
   // TODO calculate the amount of question percent answered by the user
-  const scorePerCent =Math.round((score*100)/questions.length); // TODO to change
+  const scorePerCent = Math.round((score * 100) / questions.length); // TODO to change
 
   // choose the image based on the scorePerCent
   comment = "AMAZING !";
