@@ -1,0 +1,64 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    font-size: 20px;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    background: orange;
+}
+nav .icon img {
+    width: 200px;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav ul li{
+    list-style: none;
+    text-align: center;
+}
+nav ul li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+}
+.input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon-colors{
+    color: orange;
+    padding: 5px;
+    height: 25px;
+    background: white;
+    border-radius: 17px;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+}
+nav ul li input{
+    padding: 10px;
+    border: none;
+    outline: none;
+    width: 250px;
+    border-radius: 15px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+li .fa{
+    width: 50px;
+    font-size: 30px;
+}
+
+.hearder .swiper img{
+    width: 100%;
+}
