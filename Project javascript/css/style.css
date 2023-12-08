@@ -10,6 +10,9 @@ nav{
     display: flex;
     justify-content: space-around;
     background: orange;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 nav .icon img {
     width: 200px;
@@ -38,8 +41,8 @@ nav ul li a{
 }
 .icon-colors{
     color: orange;
-    padding: 5px;
-    height: 25px;
+    padding: 6px;
+    height: 23px;
     background: white;
     border-radius: 17px;
     border-bottom-left-radius: 0px;
@@ -50,6 +53,7 @@ nav ul li input{
     border: none;
     outline: none;
     width: 250px;
+    height: 15px;
     border-radius: 15px;
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
