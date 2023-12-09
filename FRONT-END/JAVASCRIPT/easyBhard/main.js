@@ -145,7 +145,7 @@ function increProduct(event) {
     if (number == 5){
         alert('You booking This product all.❤️❤️')
     }
-    if (stock > quantity.textContent) {
+    if (stock > quantity.textContent){
         total = store.children[5]
         priceP = store.children[1].textContent
         number = Number(N) + 1

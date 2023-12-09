@@ -2,7 +2,6 @@ function saveProducts(){
     // save data to localStorage 
     localStorage.setItem('productsData', JSON.stringify(productsData));
 }
-
 function loadProducts(){
     // load data from localStorage 
     let loadProducts = JSON.parse(localStorage.getItem('productsData'));
@@ -21,7 +20,6 @@ function addProduct() {
     } else {
         proId = proId + 1;
     }
-
     // update latest ID to the product list 
     productsData.latestId = proId;
 
