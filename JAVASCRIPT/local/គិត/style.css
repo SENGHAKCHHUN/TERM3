@@ -1,0 +1,32 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.result{
+    padding: 10px;
+}
+input{
+    background: white;
+    font-size: 30px;
+    outline: none;
+    border-radius: 15px;    
+    height: 90px;
+    width: 97%;
+}
+.container{
+    width: 22.5%;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 15px;
+}
+button{
+    width: 50px;
+    text-align: center;
+    padding: 15px;
+    font-size: 35px;
+    margin: 7.5px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background: #fff;
+}

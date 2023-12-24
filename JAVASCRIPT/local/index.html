@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+        td{
+            width: 175px;
+            border: 1px solid black;
+        }
+        input{
+            margin-top: 10px;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        // let arrayobj = [
+        //     {name : "leakza", position : "Student"},
+        //     {name : "leakka", position : "Student"},
+        //     {name : "leakna", position : "Student"},
+        // ]
+        function saveData(){
+            localStorage.setItem('arrayobj', JSON.stringify(arrayobj));
+        }
+        function loadData(){
+            return JSON.parse(localStorage.getItem('arrayobj'))
+        }
+        // saveData()
+        loadData()
+        let body = document.querySelector('body');
+        function createtable(){
+            arrayobj = loadData()
+            let table = document.createElement('table');
+            let tbody = document.createElement('tbody');
+            for (let obj of arrayobj){
+                let tr = document.createElement('tr');
+                let tdName = document.createElement('td')
+                let tdPosition = document.createElement('td')
+                tdName.textContent = obj.name;
+                tdPosition.textContent = obj.position;
+                tr.appendChild(tdName)
+                tr.appendChild(tdPosition)
+                tbody.appendChild(tr)
+            }
+            table.appendChild(tbody)
+            body.appendChild(table)
+        }
+        createtable()
+        let nameInput = document.createElement('input');
+        let positionInput = document.createElement('input');
+        let btn = document.createElement('button');
+        btn.textContent = 'createUser';
+        body.appendChild(nameInput)
+        body.appendChild(positionInput)
+        body.appendChild(btn)
+        btn.addEventListener('click', function(){
+            let obj = {}
+            obj.name = nameInput.value;
+            obj.position = positionInput.value;
+            arrayobj.push(obj)
+            table.remove()
+            saveData()
+            createtable()
+            
+        })
+        
+    </script>
+</body>
+</html>
