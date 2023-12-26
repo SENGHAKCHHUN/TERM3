@@ -22,7 +22,6 @@
         <?php
         endfor
         ?>
-
     </ul>
 
 </body>
