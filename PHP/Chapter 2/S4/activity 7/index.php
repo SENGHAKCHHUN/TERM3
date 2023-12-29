@@ -15,7 +15,7 @@ require_once('templates/header.php');
             // 2 If yes : compute the PATH of the page  (example :  pages/students.php)
             $pageFile = $_GET['page'];
             // 3 Check if the file exists, you can use file_exists() with the path computed above
-            if (isset($pageFile)) {
+            if (file_exists($pageFile)){
                 $path = $pageFile;
             }
         }
