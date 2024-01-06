@@ -1,5 +1,5 @@
 
-<form action="process.php" method="get">
+<form action="process.php" method="post">
     
     <div class="mb-3">
         <input type="checkbox" name="subject[]" class="form-control-check" id="html" value="HTML">

@@ -1,4 +1,4 @@
 <?php 
-    require("./require/header.php");
-    require("./require/form.php");
+    require_once("./require/header.php");
+    require_once("./require/form.php");
 ?>
